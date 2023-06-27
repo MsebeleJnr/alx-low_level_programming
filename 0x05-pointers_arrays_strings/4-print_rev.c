@@ -2,12 +2,12 @@
 /**
  * print_rev - imprime en reversa
  * @S: string
- * Return: 0
+ * return: 0
  */
 void print_rev(char *S)
 {
 	int longi = 0;
-	int o;
+		int o;
 
 	while (*S != '\0')
 	{
@@ -15,11 +15,9 @@ void print_rev(char *S)
 		S++;
 	}
 	S--;
-	for (0 = longi; o > 0; o--)
+	for (o = longi, o > 0; o--)
 	{
 		_putchar(*S);
 		S--;
 	}
-
-	_putchar('\n');
 }
